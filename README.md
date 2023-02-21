@@ -1,6 +1,6 @@
 glad2-prebuilt
 ==============
-Prebuilt of [Dav1dde/glad: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs.](https://github.com/Dav1dde/glad).
+Prebuilt of [Dav1dde/glad: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs](https://github.com/Dav1dde/glad).
 
 Build/config glad2 without the official web ui.
 
