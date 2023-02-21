@@ -5,7 +5,7 @@ Prebuilt of [Dav1dde/glad: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Gene
 Build/config glad2 without the official web ui.
 
 ### Notes
-- Automated build must be set up for getting rid of the header generation process (which requires a bunch of tools like python)
+- [x] Automated build must be set up for getting rid of the header generation process (which requires a bunch of tools like python)
 
 ### Reference
 - [wave-generator/CMakeLists.txt at master · ValeryKameko/wave-generator](https://github.com/ValeryKameko/wave-generator/blob/master/3rd_party/glad2_loader/CMakeLists.txt)
