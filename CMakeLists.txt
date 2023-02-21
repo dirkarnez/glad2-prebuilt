@@ -1,3 +1,5 @@
+cmake_minimum_required(VERSION 3.22)
+
 project("glad2-prebuilt")
 
 include(FetchContent)
@@ -15,7 +17,21 @@ FetchContent_MakeAvailable(glad)
 glad_add_library(glad_gl_core_46 
   REPRODUCIBLE 
   STATIC
-  LANGUAGE "c++" 
-  API gl:core=4.6)
-  
-add_library(glad::glad ALIAS glad_gl_core_46)
+  API gl:core=4.6
+)
+
+#   LOCATION "${PROJECT_SOURCE_DIR}/external/glad_gl_core_46"
+
+include(GNUInstallDirs)
+
+install(DIRECTORY ${CMAKE_BINARY_DIR}/gladsources/glad_gl_core_46/include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+
+# define the export of our cmake target:
+install(
+  TARGETS glad_gl_core_46
+  EXPORT glad_gl_core_46
+  LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+  ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
+  RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+  INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
+)
