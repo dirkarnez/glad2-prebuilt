@@ -12,11 +12,10 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(glad)
 
-glad_add_library(glad_gl 
+glad_add_library(glad_gl_core_46 
   REPRODUCIBLE 
-  # STATIC
+  STATIC
   LANGUAGE "c++" 
   API gl:core=4.6)
-
-add_library(glad::glad ALIAS glad_gl)
-
+  
+add_library(glad::glad ALIAS glad_gl_core_46)
