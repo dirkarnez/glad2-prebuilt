@@ -7,6 +7,9 @@ Build/config glad2 without the official web ui.
 ### Notes
 - [x] Automated build must be set up for getting rid of the header generation process (which requires a bunch of tools like python)
 
+### How to use
+- See [box2d/extern/glad at main · erincatto/box2d](https://github.com/erincatto/box2d/tree/main/extern/glad)
+
 ### Reference
 - [wave-generator/CMakeLists.txt at master · ValeryKameko/wave-generator](https://github.com/ValeryKameko/wave-generator/blob/master/3rd_party/glad2_loader/CMakeLists.txt)
 - [Unicorn/GetDependencies.cmake at development · AlexGarrity/Unicorn](https://github.com/AlexGarrity/Unicorn/blob/development/cmake/GetDependencies.cmake)
