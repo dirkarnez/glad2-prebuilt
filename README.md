@@ -4,6 +4,9 @@ Prebuilt of [Dav1dde/glad: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Gene
 
 Build/config glad2 without the official web ui.
 
+### TODOs
+- [ ] Study [obs-studio/deps/glad at master · obsproject/obs-studio](https://github.com/obsproject/obs-studio/tree/master/deps/glad)
+
 ### Notes
 - [x] Automated build must be set up for getting rid of the header generation process (which requires a bunch of tools like python)
 
